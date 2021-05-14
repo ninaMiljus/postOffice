@@ -9,13 +9,13 @@ class Queue {
 
     dequeue () {
       if (!this.isEmpty()) {
-        return this.items.shift()
+        return this.items[0]
       }
     }
 
     front () {
       if (!this.isEmpty()) {
-        return this.items[0]
+        return this.items.shift()
       }
     }
 
